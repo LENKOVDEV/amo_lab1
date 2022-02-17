@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна №1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main id="main">
+        <div class="container">
+            <div class="task task1">
+                <h2>Завдання 1</h2>
+                <div class="img_container">
+                    <img id="img1" src="photos/task1.jpg" alt="Перша умова">
+                </div>
+                <div class="container1">
+                    <label for="one_a">A:<input type="number" name="one_a" id="one_a"></label>
+                    
+                    <label for="one_b">B:<input type="number" name="one_b" id="one_b"></label>
+                    
+                    <label for="one_c">C:<input type="number" name="one_c" id="one_c"></label>
+                    
+                    <label for="one_d">D:<input type="number" name="one_d" id="one_d"></label>
+                    <input type="file" id="your-file1" onchange=visible_btn1_file(this)>
+                </div>
+                <button id="btn1" onclick=function1() disabled>Розрахувати</button>
+                <p id="result1"></p>
+            </div>
+            <div class="task task2">
+                <h2>Завдання 2</h2>
+                <div class="img_container">
+                    <img id="img2" src="photos/task2.jpg" alt="Друга умова">
+                </div>
+                <div class="container2">
+                    <label for="two_a">A:<input type="number" name="two_a" id="two_a"></label>
+                    
+                    <label for="two_c">C:<input type="number" name="two_c" id="two_c"></label>
+                    
+                    <label for="two_k">K:<input type="number" name="two_k" id="two_k"></label>
+                    <input type="file" id="your-file2" onchange=visible_btn2_file(this)>
+                </div>
+                <button id="btn2" onclick=function2() disabled>Розрахувати</button>
+                <p id="result2"></p>
+            </div>
+            <div class="task task3">
+                <h2>Завдання 3</h2>
+                <div class="img_container">
+                    <img id="img3" src="photos/task3.jpg" alt="Третя умова">
+                </div>
+                <div class="container3">
+                    <label for="three_a">A:<input type="number" name="three_a" id="three_a"></label>
+                    
+                    <label for="three_b">B:<input type="number" name="three_b" id="three_b"></label>
+
+                    <label for="three_p">P:<input type="number" name="three_p" id="three_p"></label>
+                    <input type="file" id="your-file3" onchange=visible_btn3_file(this)>
+                </div>
+                <button id="btn3" onclick=function3() disabled>Розрахувати</button>
+                <p id="result3"></p>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
